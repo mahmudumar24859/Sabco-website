@@ -17,10 +17,10 @@ async function fetchList(path: string) {
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   // Fetch dynamic content from your API
-  const [projects, posts /*, services*/] = await Promise.all([
+  const [projects, posts , services] = await Promise.all([
     fetchList('/projects/'),
     fetchList('/posts/'),
-    // fetchList('/services/'), // uncomment when you have /services pages live
+    fetchList('/services/'), // uncomment when you have /services pages live
   ])
 
   const staticUrls: MetadataRoute.Sitemap = [
@@ -42,11 +42,11 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       changeFrequency: 'weekly',
       priority: 0.6,
     })),
-    // ...services.map((s: any) => ({
-    //   url: `${SITE}/services/${s.slug}`,
-    //   changeFrequency: 'monthly',
-    //   priority: 0.6,
-    // })),
+    ...services.map((s: any) => ({
+      url: `${SITE}/services/${s.slug}`,
+      changeFrequency: 'monthly',
+      priority: 0.6,
+    })),
   ]
 
   return [...staticUrls, ...dynamicUrls]

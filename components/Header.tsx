@@ -38,6 +38,7 @@ export function Header() {
           <Link href="/projects" className="px-3 py-2 text-slate-700 dark:text-slate-200">Projects</Link>
           <Link href="/about" className="px-3 py-2 text-slate-700 dark:text-slate-200">About</Link>
           <Link href="/blog" className="px-3 py-2 text-slate-700 dark:text-slate-200">Blog</Link>
+          <Link href="/services" className="px-3 py-2 text-slate-700 dark:text-slate-200">Services</Link>
           <Link href="/contact" className="btn btn-primary">Get a Quote</Link>
 
           {/* Theme toggle (render only after mounted) */}

@@ -96,3 +96,7 @@ EMAIL_HOST_USER = "apikey"
 EMAIL_HOST_PASSWORD = os.getenv("SENDGRID_API_KEY","")
 DEFAULT_FROM_EMAIL = os.getenv("DEFAULT_FROM_EMAIL","sabco1960@gmail.com")
 CONTACT_TO_EMAIL = os.getenv("CONTACT_TO_EMAIL", DEFAULT_FROM_EMAIL)
+
+TURNSTILE_SECRET_KEY = os.getenv("TURNSTILE_SECRET_KEY", "")
+
+TURNSTILE_BYPASS_DEV = os.getenv("TURNSTILE_BYPASS_DEV", "false").lower() in ("1","true","yes")

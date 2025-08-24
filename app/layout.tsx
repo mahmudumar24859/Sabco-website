@@ -3,6 +3,7 @@ import './globals.css'
 import { Header } from '../components/Header'
 import { Footer } from '../components/Footer'
 import { ThemeProvider } from 'next-themes'
+import Script from 'next/script'
 
 export const metadata = {
   metadataBase: new URL('https://sabco.com.ng'),
@@ -27,6 +28,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className="flex flex-col min-h-screen">
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <Header />
+          {/* Load Turnstile */}
+        <Script src="https://challenges.cloudflare.com/turnstile/v0/api.js" strategy="afterInteractive" />
           <main className="container py-8">{children}</main>
           <Footer />
         </ThemeProvider>
