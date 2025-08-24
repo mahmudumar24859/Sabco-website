@@ -1,0 +1,148 @@
+[
+  {
+    "model": "core.service",
+    "pk": 1,
+    "fields": {
+      "title": "Precast Solutions & Terrazzo",
+      "slug": "precast-terrazzo",
+      "summary": "Design and manufacture of precast elements and terrazzo tiles.",
+      "body": "<p>High-quality precast and terrazzo solutions.</p>",
+      "icon": "cube"
+    }
+  },
+  {
+    "model": "core.service",
+    "pk": 2,
+    "fields": {
+      "title": "Heavy-Duty Interlocking Procurement",
+      "slug": "heavy-interlocking",
+      "summary": "Supply of heavy duty interlocking blocks and systems.",
+      "body": "<p>Durable interlocking for industrial yards.</p>",
+      "icon": "grid"
+    }
+  },
+  {
+    "model": "core.service",
+    "pk": 3,
+    "fields": {
+      "title": "Project Management",
+      "slug": "project-management",
+      "summary": "Site management, procurement, and coordination.",
+      "body": "<p>Expert PM services for predictable delivery.</p>",
+      "icon": "briefcase"
+    }
+  },
+  {
+    "model": "core.project",
+    "pk": 1,
+    "fields": {
+      "title": "Kano Logistics Yard",
+      "slug": "kano-logistics-yard",
+      "sector": "industrial",
+      "state": "Kano",
+      "year": 2023,
+      "role": "main",
+      "materials": "precast,interlocking",
+      "description": "<p>Large-scale logistics yard with heavy-duty interlocking paving.</p>",
+      "results": "Delivered on time; improved site throughput.",
+      "testimonial": "Excellent delivery."
+    }
+  },
+  {
+    "model": "core.project",
+    "pk": 2,
+    "fields": {
+      "title": "Commercial Complex, Lagos",
+      "slug": "lagos-commercial-complex",
+      "sector": "commercial",
+      "state": "Lagos",
+      "year": 2021,
+      "role": "sub",
+      "materials": "terrazzo,cladding",
+      "description": "<p>Fa\u00e7ade cladding and terrazzo flooring for a premium mall.</p>",
+      "results": "High-quality finish; client satisfied.",
+      "testimonial": "Professional team."
+    }
+  },
+  {
+    "model": "core.project",
+    "pk": 3,
+    "fields": {
+      "title": "Public Works Road, Kaduna",
+      "slug": "kaduna-public-road",
+      "sector": "public",
+      "state": "Kaduna",
+      "year": 2020,
+      "role": "main",
+      "materials": "interlocking",
+      "description": "<p>Durable public road with interlocking pavement.</p>",
+      "results": "Improved local infrastructure.",
+      "testimonial": "Well executed."
+    }
+  },
+  {
+    "model": "core.certification",
+    "pk": 1,
+    "fields": {
+      "title": "ISO 9001 (Sample Certificate)",
+      "body": "Quality management systems certificate."
+    }
+  },
+  {
+    "model": "core.certification",
+    "pk": 2,
+    "fields": {
+      "title": "HSE Compliance (Sample)",
+      "body": "Health, Safety and Environment compliance certificate."
+    }
+  },
+  {
+    "model": "core.teammember",
+    "pk": 1,
+    "fields": {
+      "name": "Ahmad Musa",
+      "role": "Founder & CEO",
+      "bio": "20+ years in construction and precast manufacturing."
+    }
+  },
+  {
+    "model": "core.teammember",
+    "pk": 2,
+    "fields": {
+      "name": "Fatima Shehu",
+      "role": "Project Manager",
+      "bio": "Expert in large-scale project coordination."
+    }
+  },
+  {
+    "model": "core.teammember",
+    "pk": 3,
+    "fields": {
+      "name": "Ibrahim Lawal",
+      "role": "Lead Engineer",
+      "bio": "Specialist in precast design and installation."
+    }
+  },
+  {
+    "model": "core.post",
+    "pk": 1,
+    "fields": {
+      "title": "Why Precast is the Future for Industrial Projects",
+      "slug": "why-precast-future",
+      "excerpt": "Benefits of precast solutions for industrial builds.",
+      "body": "<p>Precast offers speed and consistency.</p>",
+      "published": "2024-06-01T10:00:00Z"
+    }
+  },
+  {
+    "model": "core.post",
+    "pk": 2,
+    "fields": {
+      "title": "Choosing the Right Interlocking System",
+      "slug": "choosing-interlocking",
+      "excerpt": "Guide to selecting heavy-duty interlocking.",
+      "body": "<p>Consider compressive strength and base preparation.</p>",
+      "published": "2023-11-15T09:00:00Z"
+    }
+  }
+]

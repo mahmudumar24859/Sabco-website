@@ -1,0 +1,2 @@
+
+export function Footer(){ return (<footer className="border-t bg-white dark:bg-slate-900 mt-10"><div className="container py-6 text-sm"><p><strong><a href='https://bytemastery.com.ng' target="_blank" rel="noopener noreferrer">ByteMastery Technologies</a></strong> — Abuja, Nigeria • <br /> <a href="tel:+2348036155426">+234 803 615 5426</a></p><p className="text-slate-600 dark:text-slate-300 mt-2">© {new Date().getFullYear()} All rights reserved.</p></div></footer>) }
